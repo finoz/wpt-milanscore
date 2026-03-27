@@ -20,13 +20,13 @@
 			"palette": [
 				{
 					"color": "#FFFFFF",
-					"name": "White",
-					"slug": "white"
+					"name": "Base",
+					"slug": "base"
 				},
 				{
 					"color": "#111111",
-					"name": "Black",
-					"slug": "black"
+					"name": "Contrast",
+					"slug": "contrast"
 				},
 				{
 					"color": "#353434",

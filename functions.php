@@ -7,7 +7,7 @@
 
 // ── Auto-updater ──────────────────────────────────────────────────────────────
 
-define( 'FNZ_THEME_VERSION',     '1.0.5' );
+define( 'FNZ_THEME_VERSION',     '1.0.6' );
 define( 'FNZ_THEME_SLUG',        'fnz-wpt-milanscore' );
 define( 'FNZ_THEME_GITHUB_REPO', 'finoz/wpt-milanscore' );
 
