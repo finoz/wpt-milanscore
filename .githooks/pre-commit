@@ -1,0 +1,19 @@
+#!/bin/sh
+# Verifica che FNZ_THEME_VERSION in functions.php sia diversa dall'ultimo tag git.
+# Avvisa (senza bloccare) se la versione non è stata aggiornata.
+
+VERSION=$(grep "FNZ_THEME_VERSION" functions.php | grep -oE "[0-9]+\.[0-9]+\.[0-9]+" | head -1)
+LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null | sed 's/^v//')
+
+if [ -z "$LATEST_TAG" ] || [ -z "$VERSION" ]; then
+  exit 0
+fi
+
+if [ "$VERSION" = "$LATEST_TAG" ]; then
+  echo ""
+  echo "ATTENZIONE: FNZ_THEME_VERSION ($VERSION) è uguale all'ultimo tag ($LATEST_TAG)."
+  echo "  Se stai preparando una nuova release, aggiorna la versione in functions.php."
+  echo ""
+fi
+
+exit 0
