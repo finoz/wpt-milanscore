@@ -1,0 +1,35 @@
+/*
+Theme Name:  fnz wpt milanscore
+Template:    twentytwentyfive
+Description: Child theme of Twenty Twenty-Five — custom maps & theme.json overrides.
+Version:     1.0.0
+Text Domain: fnz-wpt-milanscore
+*/
+
+
+/* Map */
+#custom-map {
+  width: 100%;
+  max-width: none;
+  height: 500px;
+  border-radius: 8px;
+}
+
+.map-infowindow {
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.5;
+  max-width: 260px;
+}
+
+.map-infowindow strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #111;
+}
+
+.map-infowindow p {
+  margin: 0;
+  color: #444;
+}

@@ -1,0 +1,80 @@
+const MAP_LOCATIONS = [
+  {
+    name: "Jikei University School of Medicine",
+    description: "Department of Surgery,<br>Tokyo, Japan<br><br>Dr. Takahiro Masuda",
+    lat: 35.6629327,
+    lng: 139.7505774,
+  },
+  {
+    name: "Universiti Sains Malaysia",
+    description: "School of Medical Science<br><br>Prof. Yeong Yeh Lee<br>Dr. Vincent Tee",
+    lat: 5.3555943,
+    lng: 100.3025455,
+  },
+  {
+    name: "Swedish Cancer Institute",
+    description: "Thoracic Surgery<br>Seattle, WA, USA<br><br>Dr. Brian Louie<br>Dr. Megan Ivy",
+    lat: 47.6098676,
+    lng: -122.3229008,
+  },
+  {
+    name: "Washington University School of Medicine",
+    description: "Division of Gastroenterology<br>St. Louis, Missouri, USA<br><br>Dr. Prakash C. Gyawali<br>Dr. Benjamin Rogers<br>Dr. Greenan Garrett",
+    lat: 38.6351441,
+    lng: -90.2629289,
+  },
+  {
+    name: "Università statale dell'Ohio",
+    description: "Division of General and Gastrointestinal Surgery<br>Columbus, OH, USA<br><br>Dr. Kyle Perry",
+    lat: 40.0060889,
+    lng: -83.0282624,
+  },
+  {
+    name: "The Functional Gut Clinic",
+    description: "London, UK<br><br>Dr. Anthony Hobson<br>Dr. Jordan Haworth",
+    lat: 51.5233784,
+    lng: -0.1601595,
+  },
+  {
+    name: "Università di medicina di Vienna",
+    description: "Division of Upper GI Surgery<br>Vienna, Austria<br><br>Prof. Sebastian F. Schoppmann<br>Dr. Ivan Kristo",
+    lat: 48.2196447,
+    lng: 16.3475329,
+  },
+  {
+    name: "University of Athens",
+    description: "Athens, Greece<br><br>Prof. Dimitrios Theodorou<br>Dr. Tania Triantafyllou",
+    lat: 37.9693209,
+    lng: 23.7720561,
+  },
+  {
+    name: "Università degli Studi della Campania Luigi Vanvitelli",
+    description: "Division of General, Mininvasive and Bariatric Surgery<br>Napoli, Italy<br><br>Dr. Salvatore Tolone",
+    lat: 40.8506317,
+    lng: 14.2531862,
+  },
+  {
+    name: "Università di Pisa",
+    description: "Division of Gastroenterology<br>Pisa, Italy<br><br>Prof. Nicola De Bortoli<br>Dr. Pierfrancesco Visaggi",
+    lat: 43.7167235,
+    lng: 10.3988593,
+  },
+  {
+    name: "Università di Genova",
+    description: "Gastroenterology Unit,<br>Department of Internal Medicine and Medical Specialties<br>Genoa, Italy<br><br>Dr. Elisa Marabotto<br>Dr. Chiara Facchini",
+    lat: 44.4148261,
+    lng: 8.9266647,
+  },
+  {
+    name: "Policlinico di Milano",
+    description: "Department of Gastroenterology<br><br>Prof. Roberto Penagini<br>Dott. Marina Coletta",
+    lat: 45.4588417,
+    lng: 9.1949702,
+  },
+  {
+    name: "IRCCS Policlinico San Donato",
+    description: "Division of General and Foregut Surgery<br>San Donato Milanese (Milan), Italy<br><br>Dr. Stefano Siboni<br>Dr. Marco Sozzi<br>Dr. Sara Boveri (statistician)<br>Dr. Benedetta Barcella<br>Dr. Lorenzo Cusmai<br>Prof. Luigi Bonavina",
+    lat: 45.410725,
+    lng: 9.2771889,
+  },
+];
