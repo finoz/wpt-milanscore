@@ -1,27 +1,6 @@
 <?php
 /**
  * fnz wpt milanscore – GitHub auto-updater
- *
- * Hooks into WordPress's native theme update mechanism so the theme shows up
- * in Dashboard → Updates and can be updated with one click.
- *
- * ── Setup ─────────────────────────────────────────────────────────────────────
- * The repo slug is set once in functions.php as FNZ_THEME_GITHUB_REPO.
- *
- * For private repos, add a personal access token (contents:read scope) in
- * wp-config.php:
- *
- *   define( 'FNZ_THEME_GITHUB_TOKEN', 'ghp_xxxxxxxxxxxx' );
- *
- * ── How it works ──────────────────────────────────────────────────────────────
- * 1. WP checks for theme updates periodically (every 12 h) via a transient.
- * 2. Our filter intercepts that check, calls the GitHub Releases API, and
- *    injects an update entry if the latest release tag is newer than the
- *    installed version.
- * 3. WP downloads the zip from GitHub and extracts it.
- * 4. A post-install hook renames the extracted folder to 'fnz-wpt-milanscore/'
- *    because GitHub auto-generates zips with the folder named 'repo-tagname/'.
- * ─────────────────────────────────────────────────────────────────────────────
  */
 
 defined( 'ABSPATH' ) || exit;
