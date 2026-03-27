@@ -9,6 +9,11 @@ Text Domain: fnz-wpt-milanscore
 */
 
 
+/* Navigation */
+.wp-block-navigation a {
+  font-family: var(--wp--preset--font-family--syne);
+}
+
 /* Map */
 #custom-map {
   width: 100%;

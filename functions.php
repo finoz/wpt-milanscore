@@ -13,6 +13,18 @@ define( 'FNZ_THEME_GITHUB_REPO', 'finoz/wpt-milanscore' );
 
 require_once get_stylesheet_directory() . '/includes/updater.php';
 
+// ── Google Fonts ───────────────────────────────────────────────────────────────
+
+add_action( 'wp_enqueue_scripts', 'fnz_enqueue_fonts' );
+function fnz_enqueue_fonts() {
+    wp_enqueue_style(
+        'fnz-google-fonts',
+        'https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Syne:wght@400..800&display=swap',
+        [],
+        null
+    );
+}
+
 add_action( 'wp_enqueue_scripts', 'fnz_enqueue_map' );
 function fnz_enqueue_map() {
     //if ( ! is_page( 'nome-pagina' ) ) return;
