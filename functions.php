@@ -1,17 +1,22 @@
 <?php
 /**
  * fnz wpt milanscore — functions.php
- * Nei block theme il parent non va enqueued:
- * i suoi stili vengono da theme.json e dai block stylesheets.
+ * Il parent non va enqueued; il child style.css va enqueued esplicitamente.
  */
 
 // ── Auto-updater ──────────────────────────────────────────────────────────────
 
-define( 'FNZ_THEME_VERSION',     '1.0.6' );
+define( 'FNZ_THEME_VERSION',     '1.0.7' );
 define( 'FNZ_THEME_SLUG',        'fnz-wpt-milanscore' );
 define( 'FNZ_THEME_GITHUB_REPO', 'finoz/wpt-milanscore' );
 
 require_once get_stylesheet_directory() . '/includes/updater.php';
+
+// ── Child theme stylesheet ─────────────────────────────────────────────────────
+
+add_action( 'wp_enqueue_scripts', static function (): void {
+    wp_enqueue_style( 'fnz-child-style', get_stylesheet_uri(), [], wp_get_theme()->get( 'Version' ) );
+} );
 
 // ── Google Fonts ───────────────────────────────────────────────────────────────
 
